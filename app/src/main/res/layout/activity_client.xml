@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+           />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:background="@color/background"
+        android:layout_marginRight="0dp"
+        android:dividerHeight="3dp"
+        android:divider="@color/backgroundDark"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No se han encontrado servidores."
+        android:id="@+id/notFound"
+        android:textColor="@color/backgroundDark"
+        android:background="#848484"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:elegantTextHeight="false"
+        android:gravity="center" />
+
+</LinearLayout>

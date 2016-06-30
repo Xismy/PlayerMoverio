@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iye19.playermoverio.Player">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"
+        android:layout_centerInParent="true" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/media"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/media2d"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/media3d"
+        android:visibility="invisible">
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/media"
+            android:layout_weight="1"
+            android:id="@+id/media_izq"/>
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/media"
+            android:layout_weight="1"
+            android:id="@+id/media_der"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlayerMoverio</string>
+    <string name="action_update">Actualizar</string>
+    <string name="action_up_dir">Arriba</string>
+    <string name="action_disconnect">Salir</string>
+    <string name="title_activity_player">Player</string>
+</resources>
